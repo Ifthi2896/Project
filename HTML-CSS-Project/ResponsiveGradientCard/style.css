@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Exo 2", sans-serif;
+    color: white;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(45deg, rgba(14,0,255,1) 0%, rgba(255,0,0,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    width: 800px;
+    height: 350px;
+    background-color: #534a4a;
+    border-radius: 25px;
+    box-shadow: 0 10px 20px #262525;
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    justify-content: flex-end;
+}
+.wrapper .box{
+    width: 250px;
+    height: 200px;
+    background: linear-gradient(235deg, rgba(14,0,255,1) 0%, rgba(255,0,0,1) 100%);
+    border-radius: 25px;
+    box-shadow: 0 10px 20px #262525;
+    position: absolute;
+    left: -60px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.wrapper .content{
+    width: 550px;
+    height: 200px;
+    line-height: 25px;
+    padding: 5px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.wrapper .content button{
+    outline: none;
+    border: none;
+    background-color: #000000;
+    border-radius: 25px;
+    padding: 10px 20px;
+    transition: all .3s;
+}
+
+.wrapper .content button:hover{
+    color: black;
+    background-color: white;
+}
